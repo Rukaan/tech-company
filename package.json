@@ -1,7 +1,7 @@
 {
-  "name": "node-js-getting-started",
-  "version": "0.3.0",
-  "description": "A sample Node.js app using Express 4",
+  "name": "nostratech",
+  "version": "0.0.1",
+  "description": "Awesome Tech Company",
   "engines": {
     "node": "10.x"
   },
@@ -20,12 +20,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
+    "url": "http://github.com/Rukaan/tech-company"
   },
   "keywords": [
-    "node",
-    "heroku",
-    "express"
+    "nostra"
   ],
-  "license": "MIT"
+  "license": "ISC"
 }
