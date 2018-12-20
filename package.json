@@ -1,0 +1,23 @@
+{
+  "name": "nostratech",
+  "version": "1.0.0",
+  "description": "Awesome Tech Company",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rukaan/tech-company.git"
+  },
+  "author": "rnadha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rukaan/tech-company/issues"
+  },
+  "homepage": "https://github.com/Rukaan/tech-company#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
