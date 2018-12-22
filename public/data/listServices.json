@@ -1,0 +1,20 @@
+[
+    {
+        "no":"01",
+        "image":"nostra_labs.jpg",
+        "title":"Nostra Labs",
+        "description":"We discover what you need and what you want, we deliver minimum viable product and validate your business model to evolve. Fail early, Fail often, Fail forward"
+    },
+    {
+        "no":"02",
+        "image":"nostra_devops.jpg",
+        "title":"Nostra DevOps",
+        "description":"Your awesome app needs strong backbone to keep it running smoothly. Leave the trouble to us and you can focus on your business and awesome app"
+    },
+    {
+        "no":"03",
+        "image":"nostra_support.jpg",
+        "title":"Nostra Support",
+        "description":"Our great app is in production. It may need minor change or still have a bug or two. We can make sure it fixed and you can keep your business going"
+    }
+]
