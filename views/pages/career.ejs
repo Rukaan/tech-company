@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- include("../partials/header",{title:"Career"}) %>
+</head>
+
+<body>
+<div class="container">
+  <div class="row" id="career">
+    <div class="accordion col-md-4">
+      <% data.forEach(function(el,index) { %>
+        <div class="card border-0">
+          <button class="btn btn-default" type="button" data-toggle="collapse" data-target=<%= ".career--"+el.no %>>
+            <div class="d-flex justify-content-between align-items-start">
+                <span class="text-left"><%= index+1 %>. <%= el.title %></span>
+                <i class="icon fas fa-chevron-right rotate-md__90"></i>
+            </div>            
+          </button>
+          <div class="collapse remove-md__above <%= "career--"+el.no %>" data-parent="#career">
+            <div class="card-body">
+              <% el.paragraphs.forEach(function(paragraph) { %>
+                <p><%= paragraph %></p>
+              <% }); %>
+            </div>
+          </div>
+        </div>
+      <% }); %>
+    </div>
+    <div class="accordion--content__expansion col-md-8 remove-md">
+      <% data.forEach(function(el) { %>
+        <div class="collapse <%= "career--"+el.no %>" data-parent="#career">
+          <div class="card border-0">
+            <div class="card--header mb-4">
+              <h3 class="text--title"><%= el.title %></h3>
+            </div>
+            <div class="card--body">
+              <% el.paragraphs.forEach(function(paragraph, index) { %>
+                <p><%= index+1 %>. <%= paragraph %></p>
+              <% }); %>
+            </div>
+          </div>
+        </div>
+      <% }); %>
+    </div>
+  </div> <!-- row -->
+</div>
+</body>
+</html>

@@ -7,6 +7,8 @@
   },
   "main": "index.js",
   "scripts": {
+    "compile:sass": "node-sass --watch ./src/sass -o ./public/stylesheets",
+    "build": "node-sass ./src/sass -o ./public/stylesheets",
     "start": "node index.js",
     "test": "node test.js"
   },
@@ -15,6 +17,7 @@
     "express": "^4.15.2"
   },
   "devDependencies": {
+    "node-sass": "^4.11.0",
     "request": "^2.81.0",
     "tape": "^4.7.0"
   },

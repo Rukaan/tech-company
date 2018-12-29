@@ -1,0 +1,13 @@
+@mixin breakdown--below($breakdown-value) {
+    // Media query
+    @media (max-width: $breakdown-value - 1) {
+        @content;
+    }
+}
+
+@mixin breakdown--over($breakdown-value) {
+    // Media query
+    @media (min-width: $breakdown-value) {
+        @content;
+    }
+}
