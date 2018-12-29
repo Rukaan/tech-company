@@ -1,0 +1,17 @@
+// Overriding
+.btn {
+    &-default {
+        &,
+        &:link,
+        &:visited {
+            background-color: $greyColor;
+            border-color: $greyColor;
+        }
+        &:hover,
+        &:active {
+            color: white;
+            background-color: $primaryColor;
+            border-color: $primaryColor;
+        }
+    }
+}

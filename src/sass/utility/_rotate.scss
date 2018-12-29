@@ -1,0 +1,9 @@
+.rotate {
+    &-md {
+        &__90 {
+            @include breakdown--below($mediumDevice){
+                transform: rotate(90deg);
+            }
+        }
+    }
+}

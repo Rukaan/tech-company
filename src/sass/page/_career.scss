@@ -1,0 +1,22 @@
+#career {
+    margin: 7rem 0;
+    // Overriding
+    .btn {
+        &-default {
+            &:hover,
+            &:active {
+                background-color: $secondaryColor;
+                border-color: $secondaryColor;
+            }
+        }
+    }
+    .accordion--content__expansion {
+        .text--title {
+            color: $primaryColor;
+
+            &::after {
+                border-bottom: 2px solid $primaryColor;
+            }
+        }
+    }
+}
