@@ -1,0 +1,13 @@
+.remove {
+    display: none;
+    &-md {
+        @include breakdown--below($mediumDevice){
+            display: none;
+        }
+        &__above {
+            @include breakdown--over($mediumDevice){
+                display: none;
+            }
+        }
+    }
+}
