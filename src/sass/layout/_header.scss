@@ -1,0 +1,28 @@
+nav{
+    border-bottom: 1px solid #dddddd;
+    padding: 15px 0px !important;    
+}
+
+.navbar-nav{
+    align-items: center;
+        
+    &--list{
+        padding:0 1.75rem;
+        color: $textPrimary;
+        font-size: 1.3em;
+
+        &:hover{
+            text-decoration: none;
+            color: $primaryColor;
+        }
+    
+        &:last-child{
+            margin-left: 2.2rem;
+        }
+    }
+}
+
+.logo{
+    width: 75%;
+    height: auto;
+}
