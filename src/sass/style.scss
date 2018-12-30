@@ -12,6 +12,10 @@
 @import './component/button';
 @import './component/accordion';
 
+// Layout
+@import './layout/header';
+@import './layout/footer';
+
 // Pages
 @import './page/index';
 @import './page/faq';
