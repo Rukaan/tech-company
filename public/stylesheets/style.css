@@ -3,6 +3,18 @@
   margin: 0;
   box-sizing: border-box; }
 
+.text__huge {
+  font-size: 5rem; }
+
+.text__big {
+  font-size: 3rem; }
+
+.text__small {
+  font-size: .5rem; }
+
+.text__tiny {
+  font-size: .25rem; }
+
 @media (max-width: 767px) {
   .rotate-md__90 {
     transform: rotate(90deg); } }
@@ -133,6 +145,38 @@ nav {
       .footer ul li i {
         font-size: 2em;
         color: #93af2d; }
+
+#nostraImages {
+  margin: 5rem 0; }
+  #nostraImages--carousel {
+    background-color: #1e2674;
+    padding: 1rem 8.3% 1rem 0;
+    border-radius: 5px;
+    margin-left: 8.3%;
+    height: 250px; }
+    #nostraImages--carousel::after {
+      content: "";
+      display: block; }
+    #nostraImages--carousel .carousel-inner {
+      border-radius: 5px;
+      width: 90%;
+      height: 100%;
+      right: 16.6%; }
+    #nostraImages--carousel .carousel-item.active {
+      display: block; }
+    #nostraImages--carousel .carousel-control-next {
+      top: auto;
+      right: 20%;
+      bottom: 1rem;
+      justify-content: flex-start; }
+  #nostraImages .carousel--text {
+    padding: 0;
+    padding-right: 8.3%; }
+    #nostraImages .carousel--text__title {
+      color: #93af2d;
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+      font-weight: 700; }
 
 #faq {
   margin: 7rem 0; }

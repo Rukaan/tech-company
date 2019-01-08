@@ -20,6 +20,34 @@
     </div>
     </div>
     <div class="container">
+        <section class="row" id="nostraImages">
+            <div id="nostraImages--caption" class="carousel slide col-6">
+                <div class="carousel-inner carousel--text">
+                <% listImage.forEach(function(el) { %>
+                    <div class="carousel-item <%= el.class %>">
+                        <h1 class="carousel--text__title text__big">
+                        <%= el.caption.title %>
+                        </h1>
+                        <p><%= el.caption.description %></p>
+                    </div>  
+                <% }); %>
+                </div>
+            </div>
+            <div id="nostraImages--carousel" class="carousel slide col-5">
+                <div class="carousel-inner">
+                <% listImage.forEach(function(el) { %>
+                    <div class="carousel-item <%= el.class %>">
+                        <img class="d-block w-100" src="/img/<%= el.source %>" alt=<%= el.alternate %>>
+                    </div>  
+                <% }); %>
+                </div>
+                <a class="carousel-control-next" href="#nostraImages--carousel" role="button" data-slide="next">
+                <span>Next &#62;</span>
+                </a>
+            </div>
+        </section> <!-- end of section -->
+    </div>
+    <div class="container">
     <div class="alert alert-info text-center" role="alert">
         To deploy your own copy, and learn the fundamentals of the Heroku platform, head over to the <a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs" class="alert-link">Getting Started with Node on Heroku</a> tutorial.
     </div>

@@ -1,0 +1,49 @@
+#nostraImages {
+    margin: 5rem 0;
+
+    &--carousel {
+        background-color: $secondaryColor;
+        padding: 1rem 8.3% 1rem 0;
+        border-radius: 5px;
+        margin-left: 8.3%;
+        height: 250px;
+
+        &::after {
+            content: "";
+            display: block;
+        }
+
+        .carousel {
+            &-inner {
+                border-radius: 5px;
+                width: 90%;
+                height: 100%;
+                right: 16.6%;
+            }
+            &-item.active {
+                display: block;
+            }
+            &-control {
+                &-next {
+                    top: auto;
+                    right: 20%;
+                    bottom: 1rem;
+                    justify-content: flex-start;
+                }
+            }
+        }
+    }
+    .carousel {
+        &--text {
+            padding: 0;
+            padding-right: 8.3%;
+
+            &__title {
+                color: $primaryColor;
+                margin-bottom: 2rem;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+        }
+    }
+}
