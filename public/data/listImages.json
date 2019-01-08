@@ -1,14 +1,29 @@
 [
     {
+        "class":"active",
         "source":"nostra_tech_company_indonesia.jpg",
-        "alternate":"Technology Company Indonesia"
+        "alternate":"Technology Company Indonesia",
+        "caption":{
+            "title":"Technology Company Indonesia",
+            "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia sit consequatur alias aut odit magni!"
+        }
     },
     {
+        "class":"",
         "source":"nostra_startup_digital_indonesia.jpg",
-        "alternate":"Startup Digital Indonesia"
+        "alternate":"Startup Digital Indonesia",
+        "caption":{
+            "title":"Startup Digital Indonesia",
+            "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia sit consequatur alias aut odit magni!"
+        }
     },
     {
+        "class":"",
         "source":"nostra_it_consulting_indonesia.jpg",
-        "alternate":"IT Consulting Indonesia"
+        "alternate":"IT Consulting Indonesia",
+        "caption":{
+            "title":"IT Consulting Indonesia",
+            "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia sit consequatur alias aut odit magni!"
+        }
     }
 ]
