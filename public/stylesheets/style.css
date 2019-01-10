@@ -15,6 +15,20 @@
 .text__tiny {
   font-size: .25rem; }
 
+.text__green {
+  color: #93af2d !important; }
+
+.text__primary {
+  color: #7b7b7b !important; }
+
+.text__vertical {
+  writing-mode: vertical-lr;
+  transform: rotateZ(180deg); }
+  @media (min-width: 992px) {
+    .text__vertical-lg {
+      writing-mode: vertical-lr;
+      transform: rotateZ(180deg); } }
+
 @media (max-width: 767px) {
   .rotate-md__90 {
     transform: rotate(90deg); } }
@@ -177,6 +191,30 @@ nav {
       margin-bottom: 2rem;
       text-transform: uppercase;
       font-weight: 700; }
+
+#sectionTheme .carousel-control {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; }
+  #sectionTheme .carousel-control-prev, #sectionTheme .carousel-control-next {
+    background-color: #1e2674;
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 5px; }
+
+#sectionTheme .text--title {
+  color: #1e2674;
+  text-transform: uppercase; }
+  #sectionTheme .text--title::after {
+    display: block;
+    padding-top: 1rem;
+    content: "";
+    width: 3rem;
+    border-bottom: 5px solid #1e2674; }
+
+#sectionTheme .carousel-item.active {
+  display: inline-block; }
 
 #faq {
   margin: 7rem 0; }

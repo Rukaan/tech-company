@@ -11,4 +11,20 @@
     &__tiny {
         font-size: .25rem;
     }
+    &__green {
+        color: $primaryColor !important;
+    }
+    &__primary {
+        color: $textPrimary !important;
+    }
+    &__vertical {
+        &-lg {
+            @include breakdown--over($largeDevice){
+                writing-mode: vertical-lr;
+                transform: rotateZ(180deg);
+            }
+        }
+        writing-mode: vertical-lr;
+        transform: rotateZ(180deg);
+    }
 }

@@ -47,3 +47,33 @@
         }
     }
 }
+
+#sectionTheme {
+    .carousel-control {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        &-prev, &-next {
+            background-color: $secondaryColor;
+            position: relative;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 5px;
+        }
+    }
+    .text--title {
+        color: $secondaryColor;
+        text-transform: uppercase;
+
+        &::after {
+            display: block;
+            padding-top: 1rem;
+            content: "";
+            width: 3rem;
+            border-bottom: 5px solid $secondaryColor;
+        }
+    }
+    .carousel-item.active {
+        display: inline-block;
+    }
+}

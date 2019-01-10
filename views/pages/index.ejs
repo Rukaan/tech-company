@@ -46,6 +46,46 @@
                 </a>
             </div>
         </section> <!-- end of section -->
+        <!-- 
+            TODO :
+            > [NOTE] replace id sectionTheme to be more descriptive
+            > [FIX] Untuk text dengan panjang < lebar container, maka akan pindah ke bawah            
+         -->
+        <section class="row mb-5" id="sectionTheme">
+            <div class="row" style="padding:0 8.3%;">
+                <div class="mr-4">
+                    <i class="font-weight-light text__green text__vertical-lg" style="font-size:1.5rem">Section</i>
+                </div>
+                <div id="sectionTheme--carousel" class="carousel col-11 px-0" style="width:91.77%" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <% listText.forEach(function(el) { %>
+                            <div class="carousel-item <%= el.class %>">
+                                <div class="card border-0">
+                                    <div class="card--header mb-4">
+                                        <span class="text--title font-weight-bold">
+                                            <%= el.title %>
+                                        </span>
+                                    </div>
+                                    <div class="card--body d-block text__primary">
+                                        <% el.paragraphs.forEach(function(para) { %>
+                                            <p><%= para %></p>
+                                        <% }) %>
+                                    </div>
+                                </div>
+                            </div>
+                        <% }); %>
+                    </div>
+                    <div class="carousel-control">
+                        <a class="carousel-control-prev mr-2" href="#sectionTheme--carousel" role="button" data-slide="prev">
+                            <span>&#60;</span>
+                        </a>
+                        <a class="carousel-control-next" href="#sectionTheme--carousel" role="button" data-slide="next">
+                            <span>&#62;</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
     <div class="container">
     <div class="alert alert-info text-center" role="alert">
