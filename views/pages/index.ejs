@@ -21,29 +21,6 @@
         </div>
     </div>
 
-
-    <div class="container">
-        <section id="carousel-fade" data-ride="carousel">
-            <div class="carousel-inner">
-
-            <% services.forEach(function(service) { %>
-                <div class="carousel-item <%= service.class %>">
-                    <div class="row services no-margin">
-                        <div class="col-md-6 services--left">
-                            <h1 class="heading--number"><%= service.no %></h1>
-                            <h1 class="heading--secondary white"><%= service.title %></h1>
-                            <p><%= service.description %></p>
-                        </div>
-                        <div class="col-md-6 services--right">
-                            <img src="/img/<%= service.image %>" alt="services-1">
-                        </div>
-                    </div>
-                </div>
-            <% }); %>
-
-            </div>
-        </section>
-    </div>
     <div class="container">
         <section class="row" id="nostraImages">
             <div id="nostraImages--caption" class="carousel slide col-6">
@@ -71,14 +48,47 @@
                 </a>
             </div>
         </section> <!-- end of section -->
+
+        <section id="nostraService" class="mb-5">
+            <div id="nostraService--carousel" class="carousel" data-ride="carousel">
+                <div class="carousel-inner">
+        
+                <% services.forEach(function(service) { %>
+                    <div class="carousel-item <%= service.class %>">
+                        <div class="row services no-margin">
+                            <div class="col-md-6 services--left">
+                                <h1 class="heading--number"><%= service.no %></h1>
+                                <h1 class="heading--secondary white"><%= service.title %></h1>
+                                <p><%= service.description %></p>
+                            </div>
+                            <div class="col-md-6 services--right">
+                                <img src="/img/<%= service.image %>" alt="services-1">
+                            </div>
+                        </div>
+                    </div>
+                <% }); %>
+
+                    
+                </div>
+                <div class="carousel-control">
+                        <a class="carousel-control-prev mr-2" href="#nostraService--carousel" role="button" data-slide="next">
+                            <span>&#60;</span>
+                        </a>
+                        <a class="carousel-control-next" href="#nostraService--carousel" role="button" data-slide="prev">
+                            <span>&#62;</span>
+                        </a>
+                    </div>
+            </div>
+        </section>
+
         <!-- 
             TODO :
             > [NOTE] replace id sectionTheme to be more descriptive
             > [FIX] Untuk text dengan panjang < lebar container, maka akan pindah ke bawah            
          -->
-        <section class="row mb-5" id="sectionTheme">
+        <section class="col-12 mb-5" id="sectionTheme">
             <div class="row" style="padding:0 8.3%;">
-                <div class="mr-4">
+                <div class="col-1">
                     <i class="font-weight-light text__green text__vertical-lg" style="font-size:1.5rem">Section</i>
                 </div>
                 <div id="sectionTheme--carousel" class="carousel col-11 px-0" style="width:91.77%" data-ride="carousel">
