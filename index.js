@@ -9,7 +9,8 @@ express()
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.render('pages/index', {
     listImage: JSON.parse(fs.readFileSync(path.join(__dirname, 'public/data', 'listImages.json'), 'utf8')),
-    listText : JSON.parse(fs.readFileSync(path.join(__dirname, 'public/data', 'listText.json'), 'utf8'))
+    listText : JSON.parse(fs.readFileSync(path.join(__dirname, 'public/data', 'listText.json'), 'utf8')),
+    imageBox : JSON.parse(fs.readFileSync(path.join(__dirname, 'public/data', 'imageBox.json'), 'utf8'))
   }))
   .get('/faq', (req, res) => res.render('pages/faq', {data: JSON.parse(fs.readFileSync(path.join(__dirname, 'public/data', 'listFAQ.json'), 'utf8'))}))
   .get('/career', (req, res) => res.render('pages/career', {data: JSON.parse(fs.readFileSync(path.join(__dirname, 'public/data', 'listCareer.json'), 'utf8'))}))
