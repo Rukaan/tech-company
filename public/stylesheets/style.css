@@ -174,20 +174,51 @@ nav {
 .white {
   color: #ffffff; }
 
-.services {
+#nostraService .services {
   background: linear-gradient(to right, #abc843 0%, #abc843 73%, #ffffff 73%, #ffffff 100%);
   border-radius: 8px;
   margin-top: 5em;
   padding: 0 3em; }
-  .services--left {
+  #nostraService .services--left {
     position: relative;
     padding-right: 4em; }
-    .services--left p {
+    #nostraService .services--left p {
       color: #ffffff; }
-  .services--right img {
+  #nostraService .services--right img {
     width: 100%;
     margin: 2em 0;
     border-radius: 8px; }
+  #nostraService .services .heading--secondary {
+    position: relative;
+    padding-bottom: 1.3rem;
+    margin-bottom: 2.5rem;
+    font-size: 2.5em; }
+    #nostraService .services .heading--secondary:before {
+      content: '';
+      position: absolute;
+      border-bottom: 5px solid #ffffff;
+      width: 14%;
+      bottom: 0; }
+  #nostraService .services .heading--number {
+    font-size: 10em;
+    color: #7704d8;
+    margin-top: -0.6em; }
+
+#nostraService .carousel-control {
+  position: absolute;
+  right: 0;
+  bottom: 0; }
+  #nostraService .carousel-control-prev {
+    transform: rotate(90deg); }
+  #nostraService .carousel-control-next {
+    transform: rotate(90deg); }
+  #nostraService .carousel-control-prev, #nostraService .carousel-control-next {
+    background-color: #1e2674;
+    position: relative;
+    margin-bottom: 5px;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 5px; }
 
 #nostraImages {
   margin: 5rem 0; }
