@@ -1,6 +1,7 @@
 [
     {
         "no":"1",
+        "class":"show",
         "title":"Front-End Engineer",
         "paragraphs":[
             "Donec suscipit sem ac arcu dapibus, vel tristique eros fringilla.",
@@ -13,6 +14,7 @@
     },
     {
         "no":"2",
+        "class":"",
         "title":"Back-End Engineer",
         "paragraphs":[
             "Phasellus sit amet erat sodales, varius neque nec, tincidunt mauris.",
@@ -23,6 +25,7 @@
     },
     {
         "no":"3",
+        "class":"",
         "title":"Android Developer",
         "paragraphs":[
             "Mauris nec ante quis odio fermentum vehicula ac et metus.",
@@ -36,6 +39,7 @@
     },
     {
         "no":"4",
+        "class":"",
         "title":"IOS Developer",
         "paragraphs":[
             "Cras in leo vulputate nisl maximus placerat.",
@@ -46,6 +50,7 @@
     },
     {
         "no":"5",
+        "class":"",
         "title":"UI/UX Designer",
         "paragraphs":[
             "Aenean ultricies sem in dolor tristique, ut imperdiet ligula tristique.",

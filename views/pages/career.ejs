@@ -8,6 +8,13 @@
 
 <% include ../partials/nav.ejs %>
 
+<!-- 
+  TODO :
+  [Note] hilangkan efek toggle
+
+ -->
+<div id="scene" style="height:6rem">
+</div>
 <div class="container">
   <div class="row" id="career">
     <div class="accordion col-md-4">
@@ -31,7 +38,7 @@
     </div>
     <div class="accordion--content__expansion col-md-8 remove-md">
       <% data.forEach(function(el) { %>
-        <div class="collapse <%= "career--"+el.no %>" data-parent="#career">
+        <div style="background-color:white" class="collapse <%= "career--"+el.no %> <%= el.class %>" data-parent="#career">
           <div class="card border-0">
             <div class="card--header mb-4">
               <h3 class="text--title"><%= el.title %></h3>
@@ -49,6 +56,10 @@
 </div>
 
 <% include ../partials/footer.ejs %>
+<script src="/js/parallax.min.js"></script>
+<script>
+  $('#scene').parallax({imageSrc: '/img/parallax.jpeg'});
+</script>
 
 </body>
 </html>
