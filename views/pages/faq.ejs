@@ -8,14 +8,21 @@
 
 <% include ../partials/nav.ejs %>
 
+<!-- 
+  TODO :
+  [Note] hilangkan efek toggle
+
+ -->
+<div id="scene" style="height:6rem">
+</div>
 <div class="container">
   <div class="row" id="faq">
     <div class="accordion col-md-4">
       <% data.forEach(function(el,index) { %>
         <div class="card border-0">
           <button class="btn btn-default" type="button" data-toggle="collapse" data-target=<%= ".faq--"+el.no %>>
-            <div class="d-flex justify-content-between align-items-start">
-                <span class="text-left"><%= index+1 %>. <%= el.title %></span>
+            <div class="d-flex justify-content-between align-items-start p-1">
+                <span class="text-left font-weight-light"><%= index+1 %>. <%= el.title %></span>
                 <i class="icon fas fa-chevron-right rotate-md__90"></i>
             </div>            
           </button>
@@ -31,7 +38,7 @@
     </div>
     <div class="accordion--content__expansion col-md-8 remove-md">
       <% data.forEach(function(el) { %>
-        <div class="collapse <%= "faq--"+el.no %>" data-parent="#faq">
+        <div style="background-color:white" class="collapse <%= "faq--"+el.no %> <%= el.class %>" data-parent="#faq">
           <div class="card border-0">
             <div class="card--header mb-4">
               <h3 class="text--title"><%= el.title %></h3>
@@ -49,6 +56,10 @@
 </div>
 
 <% include ../partials/footer.ejs %>
+<script src="/js/parallax.min.js"></script>
+<script>
+  $('#scene').parallax({imageSrc: '/img/parallax.jpeg'});
+</script>
 
 </body>
 </html>
