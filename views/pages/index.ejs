@@ -20,6 +20,74 @@
     </div>
     </div>
     <div class="container">
+        <section class="row" id="nostraImages">
+            <div id="nostraImages--caption" class="carousel slide col-6">
+                <div class="carousel-inner carousel--text">
+                <% listImage.forEach(function(el) { %>
+                    <div class="carousel-item <%= el.class %>">
+                        <h1 class="carousel--text__title text__big">
+                        <%= el.caption.title %>
+                        </h1>
+                        <p><%= el.caption.description %></p>
+                    </div>  
+                <% }); %>
+                </div>
+            </div>
+            <div id="nostraImages--carousel" class="carousel slide col-5">
+                <div class="carousel-inner">
+                <% listImage.forEach(function(el) { %>
+                    <div class="carousel-item <%= el.class %>">
+                        <img class="d-block w-100" src="/img/<%= el.source %>" alt=<%= el.alternate %>>
+                    </div>  
+                <% }); %>
+                </div>
+                <a class="carousel-control-next" href="#nostraImages--carousel" role="button" data-slide="next">
+                <span>Next &#62;</span>
+                </a>
+            </div>
+        </section> <!-- end of section -->
+        <!-- 
+            TODO :
+            > [NOTE] replace id sectionTheme to be more descriptive
+            > [FIX] Untuk text dengan panjang < lebar container, maka akan pindah ke bawah            
+         -->
+        <section class="row mb-5" id="sectionTheme">
+            <div class="row" style="padding:0 8.3%;">
+                <div class="mr-4">
+                    <i class="font-weight-light text__green text__vertical-lg" style="font-size:1.5rem">Section</i>
+                </div>
+                <div id="sectionTheme--carousel" class="carousel col-11 px-0" style="width:91.77%" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <% listText.forEach(function(el) { %>
+                            <div class="carousel-item <%= el.class %>">
+                                <div class="card border-0">
+                                    <div class="card--header mb-4">
+                                        <span class="text--title font-weight-bold">
+                                            <%= el.title %>
+                                        </span>
+                                    </div>
+                                    <div class="card--body d-block text__primary">
+                                        <% el.paragraphs.forEach(function(para) { %>
+                                            <p><%= para %></p>
+                                        <% }) %>
+                                    </div>
+                                </div>
+                            </div>
+                        <% }); %>
+                    </div>
+                    <div class="carousel-control">
+                        <a class="carousel-control-prev mr-2" href="#sectionTheme--carousel" role="button" data-slide="prev">
+                            <span>&#60;</span>
+                        </a>
+                        <a class="carousel-control-next" href="#sectionTheme--carousel" role="button" data-slide="next">
+                            <span>&#62;</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container">
     <div class="alert alert-info text-center" role="alert">
         To deploy your own copy, and learn the fundamentals of the Heroku platform, head over to the <a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs" class="alert-link">Getting Started with Node on Heroku</a> tutorial.
     </div>
