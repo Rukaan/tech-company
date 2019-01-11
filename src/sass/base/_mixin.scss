@@ -1,3 +1,11 @@
+@mixin border-bottom($color){
+    content: '';
+    position: absolute;
+    border-bottom: 5px solid $color;
+    width: 14%;
+    bottom: 0;
+}
+
 @mixin breakdown--below($breakdown-value) {
     // Media query
     @media (max-width: $breakdown-value - 1) {
