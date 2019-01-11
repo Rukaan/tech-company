@@ -85,6 +85,31 @@
                     </div>
                 </div>
             </div>
+        </section>  <!-- End of section -->
+        <!-- 
+            TODO :
+            [NOTE] replace id sectionTheme2 to be more descriptive
+         -->
+        <section class="row p-2 mb-5" id="sectionTheme2">
+            <div class="col-5" id="sectionTheme2--img" style="background-image:url( <%= imageBox.source %>)">
+            </div>
+            <div class="col-7" id="sectionTheme2--caption">
+                <div class="p-5">
+                    <div class="card border-0 text__primary mb-3">
+                        <div class="card--header mb-4">
+                            <h2 class="text--title mb-2">
+                                <%= imageBox.caption.title %>
+                            </h2>
+                        </div>
+                        <div class="card--body d-block">
+                            <% imageBox.caption.paragraphs.forEach(function(para) { %>
+                              <p><%= para %></p>  
+                            <% }) %>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary border-0"><span class="px-3">lorem</span></button>
+                </div>
+            </div>
         </section>
     </div>
     <div class="container">

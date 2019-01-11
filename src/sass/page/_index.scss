@@ -77,3 +77,42 @@
         display: inline-block;
     }
 }
+
+#sectionTheme2 {
+    border: 5px solid $secondaryColor;
+    border-radius: 5px;
+    background-color: $secondaryColor;
+
+    &--img {
+        background-size: cover;
+        background-position: center;
+        background-origin: content-box;
+        background-repeat: no-repeat;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    &--caption {
+        background-color: white;
+        border-left: 1rem solid $secondaryColor;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+
+        .text--title {
+            color: $textPrimary;
+            text-transform: uppercase;
+    
+            &::after {
+                display: block;
+                padding-top: 1rem;
+                content: "";
+                width: 3rem;
+                border-bottom: 5px solid $textPrimary;
+            }
+        }
+
+        p {
+            margin-bottom: .5rem;
+        }
+    }
+}

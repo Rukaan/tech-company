@@ -216,6 +216,34 @@ nav {
 #sectionTheme .carousel-item.active {
   display: inline-block; }
 
+#sectionTheme2 {
+  border: 5px solid #1e2674;
+  border-radius: 5px;
+  background-color: #1e2674; }
+  #sectionTheme2--img {
+    background-size: cover;
+    background-position: center;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px; }
+  #sectionTheme2--caption {
+    background-color: white;
+    border-left: 1rem solid #1e2674;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px; }
+    #sectionTheme2--caption .text--title {
+      color: #7b7b7b;
+      text-transform: uppercase; }
+      #sectionTheme2--caption .text--title::after {
+        display: block;
+        padding-top: 1rem;
+        content: "";
+        width: 3rem;
+        border-bottom: 5px solid #7b7b7b; }
+    #sectionTheme2--caption p {
+      margin-bottom: .5rem; }
+
 #faq {
   margin: 7rem 0; }
 
