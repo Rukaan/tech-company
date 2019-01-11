@@ -12,10 +12,11 @@
         &:visited {
             background-color: $greyColor;
             border-color: $greyColor;
+            color: $textPrimary !important;
         }
         &:hover,
         &:active {
-            color: white;
+            color: white !important;
             background-color: $primaryColor;
             border-color: $primaryColor;
         }

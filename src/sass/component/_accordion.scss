@@ -1,5 +1,6 @@
 .accordion {
     .card {
+        border-radius: 8px !important;
         &:not(:last-child){
             margin-bottom: 1rem;
         }
@@ -28,6 +29,11 @@
             }
             .collapsing {
                 transition: all 0s;
+            }
+            .hide-and-seek {
+                position: absolute;
+                top: 0;
+                bottom: 0;
             }
         }
     }

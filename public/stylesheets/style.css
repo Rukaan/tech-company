@@ -16,7 +16,7 @@
   font-size: .25rem; }
 
 .text__green {
-  color: #93af2d !important; }
+  color: #abc843 !important; }
 
 .text__primary {
   color: #7b7b7b !important; }
@@ -43,7 +43,7 @@
       display: none; } }
 
 .icon {
-  line-height: 1.5rem; }
+  line-height: 2rem; }
 
 .btn {
   background: #abc843;
@@ -53,14 +53,17 @@
   font-size: 1.3em; }
   .btn-default, .btn-default:link, .btn-default:visited {
     background-color: #e1e8ec;
-    border-color: #e1e8ec; }
+    border-color: #e1e8ec;
+    color: #7b7b7b !important; }
   .btn-default:hover, .btn-default:active {
-    color: white;
+    color: white !important;
     background-color: #abc843;
     border-color: #abc843; }
 
-.accordion .card:not(:last-child) {
-  margin-bottom: 1rem; }
+.accordion .card {
+  border-radius: 8px !important; }
+  .accordion .card:not(:last-child) {
+    margin-bottom: 1rem; }
 
 .accordion--content__expansion {
   position: relative;
@@ -81,6 +84,10 @@
     bottom: 0; }
   .accordion--content__expansion .collapsing {
     transition: all 0s; }
+  .accordion--content__expansion .hide-and-seek {
+    position: absolute;
+    top: 0;
+    bottom: 0; }
 
 nav {
   border-bottom: 1px solid #dddddd;
@@ -182,23 +189,6 @@ nav {
     margin: 2em 0;
     border-radius: 8px; }
 
-.heading--secondary {
-  position: relative;
-  padding-bottom: 1.3rem;
-  margin-bottom: 2.5rem;
-  font-size: 2.5em; }
-  .heading--secondary:before {
-    content: '';
-    position: absolute;
-    border-bottom: 5px solid #ffffff;
-    width: 14%;
-    bottom: 0; }
-
-.heading--number {
-  font-size: 10em;
-  color: #7704d8;
-  margin-top: -0.6em; }
-
 #nostraImages {
   margin: 5rem 0; }
   #nostraImages--carousel {
@@ -226,10 +216,27 @@ nav {
     padding: 0;
     padding-right: 8.3%; }
     #nostraImages .carousel--text__title {
-      color: #93af2d;
+      color: #abc843;
       margin-bottom: 2rem;
       text-transform: uppercase;
       font-weight: 700; }
+
+.heading--secondary {
+  position: relative;
+  padding-bottom: 1.3rem;
+  margin-bottom: 2.5rem;
+  font-size: 2.5em; }
+  .heading--secondary:before {
+    content: '';
+    position: absolute;
+    border-bottom: 5px solid #ffffff;
+    width: 14%;
+    bottom: 0; }
+
+.heading--number {
+  font-size: 10em;
+  color: #7704d8;
+  margin-top: -0.6em; }
 
 #sectionTheme .carousel-control {
   display: flex;
@@ -284,7 +291,7 @@ nav {
       margin-bottom: .5rem; }
 
 #faq {
-  margin: 7rem 0; }
+  margin: 1rem 0 7rem 0; }
 
 #career {
   margin: 7rem 0; }
