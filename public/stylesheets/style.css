@@ -29,6 +29,12 @@
       writing-mode: vertical-lr;
       transform: rotateZ(180deg); } }
 
+.text__primary {
+  color: #7b7b7b; }
+
+.text__purple {
+  color: #1e2674; }
+
 @media (max-width: 767px) {
   .rotate-md__90 {
     transform: rotate(90deg); } }
@@ -303,6 +309,24 @@ nav {
         border-bottom: 5px solid #7b7b7b; }
     #sectionTheme2--caption p {
       margin-bottom: .5rem; }
+
+#userStory .userStory--layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start; }
+  #userStory .userStory--layout .card-img-top {
+    width: 10rem;
+    height: 10rem;
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    background-color: black; }
+  #userStory .userStory--layout .card:hover .userStory--img {
+    opacity: .3; }
+
+#userStory .userStory--img {
+  height: 100%;
+  transition: all .5s; }
 
 #faq {
   margin: 1rem 0 7rem 0; }

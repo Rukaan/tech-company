@@ -145,7 +145,25 @@
                     <button class="btn btn-primary border-0"><span class="px-3">lorem</span></button>
                 </div>
             </div>
-        </section>
+        </section>  <!-- End of section -->
+        <section id="userStory" class="row mb-5">
+            <h2 class="text-center text-uppercase col-12 text__primary mb-5">What customer say</h2>
+            <div class="userStory--layout">
+                <% listUserStory.forEach(function(story) { %>
+                    <div class="card col-3 border-0">
+                        <div class="card-img-top align-self-center border-0">
+                            <img class="userStory--img" src="<%= story.img.source %>" alt="<%= story.img.alternate %>">
+                        </div>
+                        <div class="card-body text-center text__primary">
+                            <p class="card-title text-uppercase font-weight-bold text__purple"><%= story.caption.title %></p>
+                            <% story.caption.paragraphs.forEach(function(para) { %>
+                                <p><%= para %></p>
+                            <% }) %>
+                        </div>
+                    </div>
+                <% }) %>
+            </div>
+        </section> <!-- End of section -->
     </div>
     <div class="container">
     <div class="alert alert-info text-center" role="alert">
