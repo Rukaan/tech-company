@@ -1,0 +1,42 @@
+[
+    {
+        "img" : {
+            "source":"/img/nostra_support.jpg",
+            "alternate":"User 1"
+        },
+        "caption" : {
+            "title":"Adam Greyson",
+            "paragraphs":["Lorem ipsum dolor sit amet consectetur, adipisicing elit."]
+        }
+    },
+    {
+        "img" : {
+            "source":"/img/nostra_it_consulting_indonesia.jpg",
+            "alternate":"User 2"
+        },
+        "caption" : {
+            "title":"Anna Peterson",
+            "paragraphs":["Quam repellendus nulla ducimus officiis. Corporis, ullam!"]
+        }
+    },
+    {
+        "img" : {
+            "source":"/img/nostra_devops.jpg",
+            "alternate":"User 3"
+        },
+        "caption" : {
+            "title":"Brenda Red",
+            "paragraphs":["Quam repellendus nulla ducimus officiis. Corporis, ullam!"]
+        }
+    },
+    {
+        "img" : {
+            "source":"/img/nostra_startup_digital_indonesia.jpg",
+            "alternate":"User 4"
+        },
+        "caption" : {
+            "title":"Kim Green",
+            "paragraphs":["Quam repellendus nulla ducimus officiis. Corporis, ullam!"]
+        }
+    }
+]

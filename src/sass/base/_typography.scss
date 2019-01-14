@@ -27,4 +27,10 @@
         writing-mode: vertical-lr;
         transform: rotateZ(180deg);
     }
+    &__primary {
+        color: $textPrimary;
+    }
+    &__purple {
+        color: $secondaryColor;
+    }
 }
