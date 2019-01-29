@@ -23,7 +23,7 @@
 
     <div class="container">
         <section class="row" id="nostraImages">
-            <div id="nostraImages--caption" class="carousel slide col-6">
+            <div id="nostraImages--caption" class="carousel slide col-md-6">
                 <div class="carousel-inner carousel--text">
                 <% listImage.forEach(function(el) { %>
                     <div class="carousel-item <%= el.class %>">
@@ -35,7 +35,7 @@
                 <% }); %>
                 </div>
             </div>
-            <div id="nostraImages--carousel" class="carousel slide col-5">
+            <div id="nostraImages--carousel" class="carousel slide col-md-5">
                 <div class="carousel-inner">
                 <% listImage.forEach(function(el) { %>
                     <div class="carousel-item <%= el.class %>">
@@ -129,7 +129,7 @@
             <div class="col-5" id="sectionTheme2--img" style="background-image:url( <%= imageBox.source %>)">
             </div>
             <div class="col-7" id="sectionTheme2--caption">
-                <div class="p-5">
+                <div class="py-2 p-md-5">
                     <div class="card border-0 text__primary mb-3">
                         <div class="card--header mb-4">
                             <h2 class="text--title mb-2">
@@ -150,7 +150,7 @@
             <h2 class="text-center text-uppercase col-12 text__primary mb-5">What customer say</h2>
             <div class="userStory--layout">
                 <% listUserStory.forEach(function(story) { %>
-                    <div class="card col-3 border-0">
+                    <div class="card col-md-3 col-6 border-0">
                         <div class="card-img-top align-self-center border-0">
                             <img class="userStory--img" src="<%= story.img.source %>" alt="<%= story.img.alternate %>">
                         </div>
