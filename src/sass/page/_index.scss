@@ -116,9 +116,11 @@
             &-control {
                 &-next {
                     top: auto;
-                    right: 20%;
                     bottom: 1rem;
                     justify-content: flex-start;
+                    @include breakdown--over($mediumDevice){
+                        right: 20%;
+                    }
                 }
             }
         }

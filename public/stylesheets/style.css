@@ -252,9 +252,11 @@ nav {
       display: block; }
     #nostraImages--carousel .carousel-control-next {
       top: auto;
-      right: 20%;
       bottom: 1rem;
       justify-content: flex-start; }
+      @media (min-width: 768px) {
+        #nostraImages--carousel .carousel-control-next {
+          right: 20%; } }
   #nostraImages .carousel--text {
     padding: 0;
     padding-right: 8.3%; }
